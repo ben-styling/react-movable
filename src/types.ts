@@ -58,6 +58,7 @@ export interface IProps<Value> {
   lockVertically: boolean;
   voiceover: IVoiceover;
   container?: Element | null;
+  getNeedle?: (needle: number | null) => void;
 }
 
 export type TEvent = React.MouseEvent | React.TouchEvent | React.KeyboardEvent;

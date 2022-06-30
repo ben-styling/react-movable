@@ -380,6 +380,7 @@ class List<Value = string> extends React.Component<IProps<Value>> {
     offset: number,
     animateMovedItem: boolean = false,
   ) => {
+    this.props.getNeedle?.(needle);
     this.getChildren().forEach((item, i) => {
       setItemTransition(item, this.props.transitionDuration);
       if (movedItem === i && animateMovedItem) {
@@ -475,6 +476,7 @@ class List<Value = string> extends React.Component<IProps<Value>> {
   };
 
   finishDrop = () => {
+    this.props.getNeedle?.(null);
     const removeItem =
       this.props.removableByMove && this.isDraggedItemOutOfBounds();
     if (
