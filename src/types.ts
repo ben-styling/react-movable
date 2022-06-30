@@ -24,6 +24,7 @@ export interface RenderItemParams<Value> {
   isSelected: boolean;
   isDisabled: boolean;
   isOutOfBounds: boolean;
+  itemDragged: number;
 }
 
 export interface RenderListParams {

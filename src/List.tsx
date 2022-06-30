@@ -632,6 +632,7 @@ class List<Value = string> extends React.Component<IProps<Value>> {
               isSelected,
               isOutOfBounds: false,
               isDisabled,
+              itemDragged: this.state.itemDragged
             });
           }),
           isDragged: this.state.itemDragged > -1,
@@ -653,6 +654,7 @@ class List<Value = string> extends React.Component<IProps<Value>> {
               isSelected: false,
               isDisabled: false,
               isOutOfBounds: this.state.itemDraggedOutOfBounds > -1,
+              itemDragged: this.state.itemDragged
             }),
             this.props.container || document.body,
           )}
