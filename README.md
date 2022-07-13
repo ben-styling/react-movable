@@ -203,7 +203,7 @@ Provide custom DOM element where moved item will be rendered.
 ## getNeedle
 
 ```ts
-getNeedle?: (needle: string) => void;
+getNeedle?: (needle: number) => void;
 ```
 
 Provides a way to access the intended drop index (needle) while dragging
